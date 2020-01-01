@@ -1,0 +1,116 @@
+body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.form,.greetings{
+    display: none;
+}
+.js-clock, .js-greetings, .js-toDoList, .js-weather{
+    color: white;
+}
+.js-clock{
+    font-size: 100px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    width: fit-content;
+    margin:0;
+    transform: translate(-50%,-50%);
+}
+.js-weather{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+.js-form{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: fit-content;
+    padding: 0;
+    margin: 0 ;
+    transform: translate(-50%,-50%);
+    
+}
+.js-greetings{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: fit-content;
+    padding: 0;
+    margin: 0 ;
+    transform: translate(-50%,-50%);
+}
+.js-toDoForm{
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    opacity: 0.5;
+}
+.js-toDoList{
+    list-style-type: decimal;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+.js-toDoList li{
+    position: relative;
+    width: fit-content;
+    text-align: left;
+}
+.no-drag{
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.showing{
+    display: block;
+}
+.form-control-sm{
+    text-decoration-color: white;
+}
+.btn-danger{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 10px;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{ 
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 1.5s linear;
+}
